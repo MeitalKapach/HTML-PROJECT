@@ -1,0 +1,467 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+    font-family: Arial;
+   
+}
+  
+.what{
+  position: fixed;
+  top: 85vh;
+border-radius: 50%;
+}
+
+.what:hover{
+  animation: wiggle 2s linear infinite;
+}
+
+
+@keyframes wiggle {
+
+  0%,
+  7% {
+      transform: rotateZ(0);
+  }
+
+  15% {
+      transform: rotateZ(-15deg);
+  }
+
+  20% {
+      transform: rotateZ(10deg);
+  }
+
+  25% {
+      transform: rotateZ(-10deg);
+  }
+
+  30% {
+      transform: rotateZ(6deg);
+  }
+
+  35% {
+      transform: rotateZ(-4deg);
+  }
+
+  40%,
+  100% {
+      transform: rotateZ(0);
+  }
+}
+
+header{
+  font-size: 5vh;
+  font-family: Curlz MT;
+  background-color:rgb(231, 185, 98);
+  color:white;
+  text-align: center;
+ 
+  
+
+}
+
+nav{
+  background-color: rgb(231, 185, 98);
+  color: white;
+  position: sticky;
+  top: 0;
+  grid-area: nav;
+  display:flex;
+  justify-content: center;
+  z-index: 76435898;
+}
+
+nav a {
+  
+  font-size: 2.3vh;
+  color: white;
+  margin: 20px;
+  text-decoration:none;
+}
+
+
+.link{
+  font-size: 2.3vh;
+  color: white;
+  margin: 20px;
+ 
+}
+a:hover{
+ color: black;
+}
+
+.mainside{
+ display: flex;
+} 
+
+aside{
+ display: flex;
+ flex-direction: column;
+
+}
+
+aside img{
+  height: 26.7vh;
+  width: 22vw;
+}
+
+main{ 
+  width: 78vw;
+}
+
+.container{
+  grid-area:container ;
+  height: 100%;
+  width: auto;
+  margin:auto;
+  background-size: 125% ;
+  animation-name:contai ;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes contai{
+       0%{background-image: url('images/חדר ילדים/162-picture.jpg');}
+       25%{background-image: url('images/חדר שינה/3-9-scaled.jpg');}
+       50%{background-image: url('images/מטבח/ANAT.webp');}
+       75%{background-image: url('images/סלון/Cat_481477_5249.jpg');}
+      100%{background-image: url('images/אמבטיה/bathroom_design.jpg');}
+}
+
+.ask{
+  
+  font-size: 3vh;
+  margin-top: 3vh;
+  margin-left:7vw ;
+}
+
+
+footer{
+  background-color: black;
+  color: white;
+  height: 30vh;
+}
+
+form{
+  padding: 4vh;
+  text-align: right;
+  display: flex;
+  flex-direction: row;
+}
+
+form div{
+  display: flex;
+  flex-direction: column;
+  margin-left: 8vw;
+}
+
+input{
+  width: 20vw;
+  background-color: black;
+ border:1px solid white;
+  color: white;
+  border-radius: 5px;
+}
+
+.conact{
+font-size: 2.5vh;
+height: 4vh;
+color: white;
+background-color: black;
+margin-left: 44vw;
+border-radius: 8px;
+}
+
+.conact:hover{
+  background-color: rgb(231, 185, 98);
+}
+
+footer p{
+  font-size: 2vh;
+  text-align: center;
+  margin-top: 8vh;
+}
+
+.conact a{
+  text-decoration: none;
+  color: white;
+}
+
+
+.title :hover .hide{
+  display: block;
+  position: absolute;
+ 
+}
+
+.hide {
+  position: inherit;
+  display: none;
+  background-color: burlywood;
+  margin-top: 27px;
+  padding: 20px;
+  padding-top: 10px;
+}
+
+/* .aboutUsDropdown-Item {
+  color: white !important;
+  border-bottom: solid;
+  border-bottom-color: white;
+  border-bottom-width: 2px;
+  padding: 10px;
+} */
+
+/* .link :hover {
+  padding-bottom: 20px;
+  
+  border-bottom: solid;
+  border-bottom-width: 10px;
+  
+} */
+
+.menu:hover .hide {
+  display: block;
+  position: absolute;
+}
+
+/* .aboutUsDropdown-Item:hover {
+  padding-bottom: 0px;
+  background-color: white;
+  color: black !important;
+  border-bottom: solid;
+  border-bottom-color: white !important;
+  border-bottom-width: 2px;
+}
+
+.aboutUsDropdown-Item a:hover {
+  color: black !important;
+  border-bottom: solid;
+  border-bottom-color: none !important;
+  border-bottom-width: 0px;
+} */
+
+ul{
+  display: flex;
+  list-style: none;
+}
+
+
+.hide{
+  margin-top:0%;
+}
+.imagesDining{
+  display: grid;
+  /* grid-area: main; */
+  height: 100vh;
+  grid-template-columns:1fr 1fr 1fr 1fr ;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+
+}
+
+.imagesDiningroom{
+  display: grid;
+  /* grid-area: main; */
+  height: 100vh;
+  grid-template-columns:1fr 1fr 1fr 1fr ;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: 
+    'im1 im1 im2 im3'
+    'im4 im5 im6 im3'
+    'im7 im8 im9 im9'
+    'im10 im11 im12 im13'
+    'im14 im15 im16 im17'
+    ;
+}
+.imagesDiningroom{
+width: 100vw;
+}
+.imagesDining{
+  width: 100vw;
+  }
+.imagesDiningroom img:hover{
+
+  opacity: 70%;
+  }
+.imagesDiningroom img{
+width: 100%;
+height: 100%;
+padding: 0.2vw;
+}
+.imagesDining img:hover{
+  opacity: 70%;
+  }
+.imagesDining img{
+width: 100%;
+height: 100%;
+padding: 0.2vw;
+}
+.im1{
+  grid-area: im1;
+width: 100%;
+height: 100%;
+}
+.im2{
+  grid-area: im2;
+  width: 100%;
+  height: 100%;
+}
+.im3{
+  grid-area: im3;
+  width: 100%;
+height: 100%;
+}
+.im4{
+  grid-area: im4;
+  width: 100%;
+  height: 100%;
+}
+.im5{
+  grid-area: im5;
+  width: 100%;
+height: 100%;
+}
+.im6{
+  grid-area: im6;
+  width: 100%;
+height: 100%;
+}
+.im7{
+  grid-area: im7;
+  width: 100%;
+height: 100%;
+}
+.im8{
+  grid-area: im8;
+  width: 100%;
+height: 100%;
+}
+.im9{
+  grid-area: im9;
+  width: 100%;
+height: 100%;
+}
+.im10{
+  grid-area: im10;
+  width: 100%;
+  height: 100%;
+}
+.im11{
+  grid-area: im11;
+  width: 100%;
+height: 100%;
+}
+.im12{
+  grid-area: im12;
+  width: 100%;
+height: 100%;
+}
+.im13{
+  grid-area: im13;
+  width: 100%;
+height: 100%;
+}
+.im14{
+  grid-area: im14;
+  width: 100%;
+height: 100%;}
+.im15{
+  grid-area: im15;
+  width: 100%;
+height: 100%;
+}
+.im16{
+  grid-area: im16;
+  width: 100%;
+height: 100%;
+}
+.im17{
+  grid-area: im17;
+  width: 100%;
+height: 100%;
+}
+
+.conacta{
+text-align: center;
+}
+
+.textarea{
+ 
+  width: 76vw;
+  height: 10vh;
+  direction: rtl;
+}
+@media screen and (max-width: 992px){
+
+  aside img{
+    width: 32vw;
+  }
+ 
+  .ask {
+    font-size: 2vh;
+  }
+
+.imagesDining{
+  display: grid;
+  /* grid-area: main; */
+ 
+  grid-template-columns:1fr 1fr  ;
+   height: 200vw;
+
+}
+
+}
+@media screen and (max-width:600px){
+  aside img{
+    width: 80vw;
+    margin: auto;
+  }
+  .ul{
+    flex-direction: column;
+  }
+  ul{
+    display: flex;
+   flex-direction: column;
+  }
+  .link{
+    margin: 3px;
+  }
+
+.imagesDining{
+  display: grid;
+  /* grid-area: main; */
+  height: 100vh;
+  grid-template-columns:1fr ;
+
+ height: 60vw; 
+align-items: center;
+}
+}
+#send{
+  position: relative;
+
+}
+#send::after{
+  content: " ";
+  position: absolute;
+  height: 0px;
+  width: 30px;
+  border: 1px solid black;
+  top: 5px;
+  left: 50px;
+
+}
+#send::before{
+  content: " ";
+  position: absolute;
+  height: 10px;
+  width: 10px;
+  border: 1px solid ;
+  border-color: black transparent transparent black;
+  transform: rotate(-45deg);
+  top: 0px;
+  left: 50px;
+}
+
